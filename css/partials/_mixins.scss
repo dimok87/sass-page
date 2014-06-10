@@ -1,0 +1,30 @@
+@mixin arrow($color, $width) {
+    width: 0; 
+    height: 0; 
+    border-left: $width solid transparent;
+    border-right: $width solid transparent;
+    border-top: $width solid $color;
+    position: absolute;
+    top: 50px;
+    left: 50%;
+    margin-left: -5px;
+    content: " ";
+}
+
+@mixin socialButton($image) {
+& {
+    display: inline-block;
+    width: 51px;
+    height: 26px;
+    position: relative;
+    background: url($imageDir + $image + '.jpg') no-repeat;
+    opacity: 0.25;
+}
+&:hover {
+    opacity: 1;
+}
+}
+
+@mixin socialButtonHover($image) {
+    background: url($imageDir + $image) no-repeat;
+}

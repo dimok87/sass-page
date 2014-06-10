@@ -1,0 +1,287 @@
+#logo {
+  background: url("../images/logo.png") no-repeat center 0;
+  width: 100%;
+  height: 34px;
+}
+
+#logo-small {
+  background: url("../images/logo-small.png") no-repeat 0 center;
+  height: 50px;
+  width: 41px;
+  float: left;
+  display: none;
+}
+
+.navbar {
+  background: #6b9ad0;
+  width: 100%;
+  top: 0;
+  z-index: 1;
+}
+
+.navbar-nav {
+  margin: 0 auto;
+  display: table;
+  table-layout: fixed;
+  float: none;
+}
+
+.full-nav .navbar-nav {
+  margin: 0 auto;
+  display: table;
+  table-layout: fixed;
+  float: none;
+}
+
+.navbar-default .navbar-nav li a {
+  text-transform: uppercase;
+  color: #fff;
+}
+
+.navbar-default .navbar-nav li a:hover {
+  color: #fff;
+  background: #7ca7d9;
+}
+
+.navbar-nav li a:hover:after {
+  width: 0;
+  height: 0;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-top: 5px solid #6b9ad0;
+  position: absolute;
+  top: 50px;
+  left: 50%;
+  margin-left: -5px;
+  content: " ";
+}
+
+#question-mark, #ex-mark, #pen-mark {
+  position: absolute;
+  top: 0;
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  color: #6b9ad0;
+  background: #7ca7d9;
+  text-align: center;
+  font-size: 25px;
+  cursor: pointer;
+}
+
+#question-mark {
+  left: 0;
+}
+
+#ex-mark {
+  right: 0;
+}
+
+#pen-mark {
+  left: 110px;
+  background: url("../images/pen.png") no-repeat center center #7ca7d9;
+}
+
+#about, #shit {
+  display: none;
+}
+
+#question-mark:hover:after, #ex-mark:hover:after, #pen-mark:hover:after {
+  width: 0;
+  height: 0;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-top: 5px solid #6b9ad0;
+  position: absolute;
+  top: 50px;
+  left: 50%;
+  margin-left: -5px;
+  content: " ";
+}
+
+#someshit h1 {
+  background: url("../images/shit-bg.png") no-repeat;
+  color: #6794b7;
+  padding-left: 45px;
+  padding-top: 5px;
+  text-transform: uppercase;
+  font-size: 14px;
+  width: 260px;
+  height: 35px;
+}
+
+#someshit p {
+  font-size: 12px;
+}
+
+.post h3 {
+  color: #69747c;
+}
+
+.post p {
+  color: #69747c;
+}
+
+.post .info {
+  height: 40px;
+  line-height: 40px;
+  border-top: 1px solid #e2e5e8;
+  border-bottom: 1px solid #e2e5e8;
+  margin-bottom: 20px;
+  color: #69747c;
+}
+
+.post .time {
+  background: url("../images/clock.png") no-repeat left center;
+  display: inline-block;
+  padding-left: 20px;
+}
+
+.post .author {
+  background: url("../images/foot.png") no-repeat left center;
+  display: inline-block;
+  padding-left: 15px;
+  color: #69747c;
+  margin-left: 25px;
+}
+
+.post .fb {
+  display: inline-block;
+  width: 51px;
+  height: 26px;
+  position: relative;
+  background: url("../images/fb.jpg") no-repeat;
+  opacity: 0.25;
+}
+.post .fb:hover {
+  opacity: 1;
+}
+
+.post .google {
+  display: inline-block;
+  width: 51px;
+  height: 26px;
+  position: relative;
+  background: url("../images/google.jpg") no-repeat;
+  opacity: 0.25;
+}
+.post .google:hover {
+  opacity: 1;
+}
+
+.post .twitter {
+  display: inline-block;
+  width: 51px;
+  height: 26px;
+  position: relative;
+  background: url("../images/twitter.jpg") no-repeat;
+  opacity: 0.25;
+}
+.post .twitter:hover {
+  opacity: 1;
+}
+
+.post .ya {
+  display: inline-block;
+  width: 51px;
+  height: 26px;
+  position: relative;
+  background: url("../images/ya.jpg") no-repeat;
+  opacity: 0.25;
+}
+.post .ya:hover {
+  opacity: 1;
+}
+
+.post .vk {
+  display: inline-block;
+  width: 51px;
+  height: 26px;
+  position: relative;
+  background: url("../images/vk.jpg") no-repeat;
+  opacity: 0.25;
+}
+.post .vk:hover {
+  opacity: 1;
+}
+
+.post .buttons {
+  float: right;
+  margin-top: 6px;
+}
+
+.post .author:hover {
+  color: #69747c;
+}
+
+/* Portrait tablets and medium desktops */
+@media (min-width: 992px) {
+  #ex-mark, #question-mark, #expand-btn, #pen-mark {
+    display: none;
+  }
+
+  .affix #logo-small {
+    display: block;
+  }
+}
+/* Portrait tablets and small desktops */
+@media (min-width: 775px) and (max-width: 991px) {
+  #question-mark, #ex-mark {
+    display: block;
+  }
+
+  #expand-btn, .affix #logo-small, #pen-mark, #someshit h1, #about-block {
+    display: none;
+  }
+
+  #someshit p {
+    color: #69747c;
+  }
+}
+/* Landscape phones and smaller */
+@media (max-width: 774px) {
+  #expand-btn, #question-mark, #ex-mark, #pen-mark {
+    display: block;
+  }
+
+  #expand-btn {
+    border-color: #6b9ad0;
+  }
+
+  #expand-btn:hover, #expand-btn:active, #expand-btn:focus {
+    background: none;
+  }
+
+  .navbar-default .navbar-toggle .icon-bar {
+    background-color: #9cbce1;
+  }
+
+  .affix #logo-small, #about-block, .navbar-nav li a:hover:after {
+    display: none;
+  }
+
+  #ex-mark {
+    left: 55px;
+  }
+
+  #someshit {
+    background: #e1eefc;
+    position: relative;
+    padding-bottom: 20px;
+  }
+
+  #someshit p {
+    color: #6689a5;
+  }
+
+  #someshit h1 {
+    background: none;
+    position: absolute;
+    bottom: 0;
+    right: 30px;
+    color: #fff;
+    font-size: 18px;
+    width: auto;
+    height: auto;
+  }
+}
